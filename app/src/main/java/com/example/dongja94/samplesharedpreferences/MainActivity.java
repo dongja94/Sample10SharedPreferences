@@ -2,6 +2,8 @@ package com.example.dongja94.samplesharedpreferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        ImageView riv = (ImageView)findViewById(R.id.image_icon);
+        Bitmap bm = ((BitmapDrawable)getResources().getDrawable(R.drawable.a1443687949897)).getBitmap();
+        riv.setImageBitmap(bm);
 
         idView = (EditText)findViewById(R.id.edit_userid);
         pwView = (EditText)findViewById(R.id.edit_password);

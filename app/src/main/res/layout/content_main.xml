@@ -62,4 +62,12 @@
         android:layout_below="@+id/edit_password"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <com.example.dongja94.samplesharedpreferences.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_icon"
+        android:layout_below="@+id/btn_save"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
